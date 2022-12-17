@@ -5,7 +5,7 @@ const Sidebar: FC<any> = ({ children }) => {
   const selectedCSS = "!text-white !bg-[#8692A6] !rounded-full";
   return (
     <div className="grid grid-cols-6 min-h-max">
-      <div className="col-span-1 flex flex-col h-full justify-between my-4 w-full">
+      <div className="col-span-1 flex flex-col h-full gap-2 my-4 w-full">
         <div
           className={`py-4 bottom-10 left-20 flex items-center px-8 gap-4 group text-[#696F79] hover:text-white hover:bg-[#8692A6] hover:rounded-full ${
             select == 0 ? selectedCSS : ""
