@@ -91,7 +91,7 @@ const Main = () => {
           </svg>
         </div>
 
-        <div className="relative text-center shadow-lg rounded-full py-4 px-4">
+        <div className="relative text-center shadow-lg rounded-full py-4 px-4 cursor-pointer">
           <span className="absolute left-8 top-[%50]">
             <svg
               width="24"
@@ -117,8 +117,8 @@ const Main = () => {
                 fill="#1976D2"
               />
             </svg>
-          </span>{" "}
-          Google ile Giriş Yap{" "}
+          </span>
+          Google ile Giriş Yap
         </div>
       </div>
     </div>
