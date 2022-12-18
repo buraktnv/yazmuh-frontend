@@ -6,8 +6,10 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="flex items-center justify-between py-6 px-2">
-        <h4 className="text-3xl font-extrabold text-[#696F79]">Quiz Time</h4>
+      <div className="flex items-center justify-between py-6 px-2 ">
+        <h4 className="text-3xl font-extrabold text-[#696F79] pr-8 text-center">
+          Quiz Time
+        </h4>
         <div className="w-1/4">
           <div className="relative">
             <svg

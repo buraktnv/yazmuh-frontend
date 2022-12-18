@@ -1,5 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
+import Card from "../components/play/Card";
 
 const ICONS = {
   Finish: (
@@ -139,15 +140,17 @@ const Profile = () => {
   const SpendTime = "36h";
   const trueAnser = "490";
   return (
-    <div className="shadow-md rounded-3xl px-4 py-4 mx-4 my-4 h-full w-full">
+    <div>
       <div className="grid grid-cols-4">
-        <div className="h-64 w-full relative">
-          <Image
-            src={"/profilePhoto.png"}
-            alt="Profil Fotorafı"
-            fill
-            className="object-fill"
-          />
+        <div className="z-10 flex items-center">
+          <div className="h-60 mx-8 w-full relative">
+            <Image
+              src={"/profilePhoto.png"}
+              alt="Profil Fotorafı"
+              fill
+              className="object-fill"
+            />
+          </div>
         </div>
         <div className="col-span-3 pt-5 flex flex-col gap-6">
           <div className="text-3xl font-bold text-[#696F79]"> {USERNAME}</div>
@@ -236,51 +239,36 @@ const Profile = () => {
             </div>
             <div className="w-max text-lg">Hepsini Göster</div>
           </div>
-          <div className="grid-cols-2 grid">
-            <div className="h-60 w-72 relative">
-              <Image
-                src={"/tarih.png"}
-                alt="Profil Fotorafı"
-                fill
-                className="object-fill"
-              />
-              <div className="absolute bottom-16 left-16 text-white text-2xl tracking-wide font-bold">
-                Tarih
-              </div>
-            </div>
-            <div className="h-60 w-72 relative">
-              <Image
-                src={"/saglık.png"}
-                alt="Profil Fotorafı"
-                fill
-                className="object-fill"
-              />
-              <div className="absolute bottom-16 left-16 text-white text-2xl tracking-wide font-bold">
-                Sağlık
-              </div>
-            </div>
-            <div className="h-60 w-72 relative">
-              <Image
-                src={"/teknoloji.png"}
-                alt="Profil Fotorafı"
-                fill
-                className="object-fill"
-              />
-              <div className="absolute bottom-16 left-16 text-white text-2xl tracking-wide font-bold">
-                Teknoloji
-              </div>
-            </div>
-            <div className="h-60 w-72 relative">
-              <Image
-                src={"/tarım.png"}
-                alt="Profil Fotorafı"
-                fill
-                className="object-fill"
-              />
-              <div className="absolute bottom-16 left-16 text-white text-2xl tracking-wide font-bold">
-                Tarım
-              </div>
-            </div>
+          <div className="grid grid-cols-2 gap-4 pt-4">
+            <Card
+              content={{
+                src: "/tarih.png",
+                alt: "tarih",
+                title: "Tarih",
+              }}
+            />
+            <Card
+              content={{
+                src: "/saglık.png",
+                alt: "sağlık",
+                title: "Sağlık",
+              }}
+            />
+            <Card
+              content={{
+                src: "/teknoloji.png",
+                alt: "teknoloji",
+                title: "Teknoloji",
+              }}
+            />
+
+            <Card
+              content={{
+                src: "/tarım.png",
+                alt: "Tarım",
+                title: "Tarım",
+              }}
+            />
           </div>
         </div>
       </div>
