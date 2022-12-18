@@ -4,7 +4,7 @@ import Side from "../../components/auth/Side";
 
 const index = () => {
   return (
-    <div className="flex">
+    <div className="grid grid-cols-3">
       <Side />
       <Main />
     </div>

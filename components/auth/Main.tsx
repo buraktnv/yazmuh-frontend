@@ -3,7 +3,7 @@ import Inputbox from "../shared/Inputbox";
 
 const Main = () => {
   return (
-    <div className="flex items-center justify-center gap-5 relative w-full">
+    <div className="relative flex items-center justify-center w-full col-span-2 gap-5">
       <div className="absolute top-12 left-8">
         <button className="flex items-center gap-2 text-[#8692A6] tex-lg font-semibold">
           <span className="text-xl">
@@ -23,7 +23,7 @@ const Main = () => {
           <p>Geri</p>
         </button>
       </div>
-      <div className="h-2/3  w-3/5 flex flex-col gap-5">
+      <div className="flex flex-col w-3/5 gap-5 h-2/3">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl font-bold">Hesabına Giriş Yap</h2>
           <h3 className="text-lg">Kayıtlı E-Posta adresini kullan </h3>
@@ -49,12 +49,12 @@ const Main = () => {
           }}
         />
 
-        <div className="flex gap-3 items-center">
+        <div className="flex items-center gap-3">
           <input
             type="checkbox"
             name="remember"
             id="remember"
-            className="rounded h-4 w-4"
+            className="w-4 h-4 rounded"
           />
           <label
             htmlFor="remember"
@@ -91,7 +91,7 @@ const Main = () => {
           </svg>
         </div>
 
-        <div className="relative text-center shadow-lg rounded-full py-4 px-4 cursor-pointer">
+        <div className="relative px-4 py-4 text-center rounded-full shadow-lg cursor-pointer">
           <span className="absolute left-8 top-[%50]">
             <svg
               width="24"

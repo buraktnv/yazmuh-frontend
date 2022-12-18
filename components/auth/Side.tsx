@@ -8,9 +8,9 @@ const AUTHOR = "Brian Tracy";
 
 const Side = () => {
   return (
-    <div className="flex w-full min-h-screen">
-      <div className="flex relative w-[47%] h-full items-center justify-center">
-        <div className="relative text-lg text-white z-20 w-1/2 pl-12 leading-10 tracking-wide">
+    <div className="flex w-full min-h-screen col-span-1">
+      <div className="relative flex items-center justify-center w-full h-full">
+        <div className="relative z-20 w-1/2 pl-12 text-lg leading-10 tracking-wide text-white">
           <div className="text-[#00DAF7] text-[72px] font-bold absolute -top-5 left-4 z-10 loginQuotationMark">
             <svg
               width="26"
